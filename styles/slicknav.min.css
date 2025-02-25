@@ -1,0 +1,92 @@
+.slicknav_menu {
+  display: block;
+  background-color: #c6a057;
+  color: #fff;
+}
+
+.slicknav_menu a {
+  color: #fff;
+}
+
+.slicknav_menu::after,
+.slicknav_menu::before {
+  display: table;
+  content: "";
+  clear: both;
+}
+
+.slicknav_btn {
+  display: block;
+}
+
+.slicknav_btn {
+  display: block;
+}
+
+.slicknav_icon {
+  display: block;
+  padding: 10px;
+}
+
+.slicknav_icon > span {
+  display: block;
+  width: 25px;
+  height: 3px;
+  margin-bottom: 5px;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.slicknav_icon > span:last-child {
+  margin-bottom: 0;
+}
+
+.slicknav_nav,
+.slicknav_nav ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.slicknav_nav li {
+  line-height: 2.1;
+  display: block;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+}
+
+.slicknav_nav li li:last-child {
+  border-bottom: 0;
+}
+
+.slicknav_nav li a {
+  display: inline-block;
+  padding: 3px 10px;
+}
+
+.slicknav_arrow {
+  display: none;
+}
+
+.slicknav_menutxt {
+  display: none;
+}
+
+/*
+     FILE ARCHIVED ON 20:03:13 Oct 09, 2023 AND RETRIEVED FROM THE
+     INTERNET ARCHIVE ON 08:01:23 Feb 24, 2025.
+     JAVASCRIPT APPENDED BY WAYBACK MACHINE, COPYRIGHT INTERNET ARCHIVE.
+
+     ALL OTHER CONTENT MAY ALSO BE PROTECTED BY COPYRIGHT (17 U.S.C.
+     SECTION 108(a)(3)).
+*/
+/*
+playback timings (ms):
+  captures_list: 2.808
+  exclusion.robots: 0.025
+  exclusion.robots.policy: 0.011
+  esindex: 0.013
+  cdx.remote: 69.109
+  LoadShardBlock: 531.878 (3)
+  PetaboxLoader3.datanode: 304.073 (4)
+  PetaboxLoader3.resolve: 483.274 (3)
+  load_resource: 298.174
+*/

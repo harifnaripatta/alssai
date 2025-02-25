@@ -1,0 +1,52 @@
+/*
+ * Droid Arabic Kufi (Arabic) http://www.google.com/fonts/earlyaccess
+ */
+@font-face {
+  font-family: "Droid Arabic Kufi";
+  font-style: normal;
+  font-weight: 400;
+  src: url(http://web.archive.org/web/20231009162226im_/https://fonts.gstatic.com/ea/droidarabickufi/v6/DroidKufi-Regular.eot);
+  src: url(http://web.archive.org/web/20231009162226im_/https://fonts.gstatic.com/ea/droidarabickufi/v6/DroidKufi-Regular.eot#iefix)
+      format("embedded-opentype"),
+    url(http://web.archive.org/web/20231009162226im_/https://fonts.gstatic.com/ea/droidarabickufi/v6/DroidKufi-Regular.woff2)
+      format("woff2"),
+    url(http://web.archive.org/web/20231009162226im_/https://fonts.gstatic.com/ea/droidarabickufi/v6/DroidKufi-Regular.woff)
+      format("woff"),
+    url(http://web.archive.org/web/20231009162226im_/https://fonts.gstatic.com/ea/droidarabickufi/v6/DroidKufi-Regular.ttf)
+      format("truetype");
+}
+@font-face {
+  font-family: "Droid Arabic Kufi";
+  font-style: normal;
+  font-weight: 700;
+  src: url(http://web.archive.org/web/20231009162226im_/https://fonts.gstatic.com/ea/droidarabickufi/v6/DroidKufi-Bold.eot);
+  src: url(http://web.archive.org/web/20231009162226im_/https://fonts.gstatic.com/ea/droidarabickufi/v6/DroidKufi-Bold.eot#iefix)
+      format("embedded-opentype"),
+    url(http://web.archive.org/web/20231009162226im_/https://fonts.gstatic.com/ea/droidarabickufi/v6/DroidKufi-Bold.woff2)
+      format("woff2"),
+    url(http://web.archive.org/web/20231009162226im_/https://fonts.gstatic.com/ea/droidarabickufi/v6/DroidKufi-Bold.woff)
+      format("woff"),
+    url(http://web.archive.org/web/20231009162226im_/https://fonts.gstatic.com/ea/droidarabickufi/v6/DroidKufi-Bold.ttf)
+      format("truetype");
+}
+
+/*
+     FILE ARCHIVED ON 16:22:26 Oct 09, 2023 AND RETRIEVED FROM THE
+     INTERNET ARCHIVE ON 08:01:27 Feb 24, 2025.
+     JAVASCRIPT APPENDED BY WAYBACK MACHINE, COPYRIGHT INTERNET ARCHIVE.
+
+     ALL OTHER CONTENT MAY ALSO BE PROTECTED BY COPYRIGHT (17 U.S.C.
+     SECTION 108(a)(3)).
+*/
+/*
+playback timings (ms):
+  captures_list: 0.605
+  exclusion.robots: 0.018
+  exclusion.robots.policy: 0.008
+  esindex: 0.011
+  cdx.remote: 6.746
+  LoadShardBlock: 267.009 (6)
+  PetaboxLoader3.datanode: 279.399 (7)
+  load_resource: 78.272
+  PetaboxLoader3.resolve: 38.368
+*/

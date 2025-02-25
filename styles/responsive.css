@@ -1,0 +1,184 @@
+	/* Large Devices, Wide Screens */
+@media only screen and (max-width : 1200px) {
+}
+
+	/* Medium Devices, Desktops */
+@media only screen and (max-width : 992px) {
+}
+
+	/* Small Devices, Tablets */
+@media only screen and (max-width : 768px) {
+}
+
+	/* Extra Small Devices, Phones */
+@media only screen and (max-width : 480px) {
+
+
+  .header select {
+    display: block;
+  }
+
+  .top-bar .menu-top-bar {
+    display: none;
+  }
+
+  .header .logo {
+    padding: 25px;
+    position: relative;
+    ;
+	  right: 0;
+    top: 0;
+    width: 100%;
+    display: block;
+    z-index: 99999;
+    text-align: center;
+  }
+
+  .header .logo-side {
+    padding: 15px;
+    position: relative;
+    ;
+	  right: 0;
+    top: 0;
+    width: 100%;
+    display: block;
+    z-index: 99999;
+    text-align: center;
+  }
+
+  .header .head-menu {
+    display: none;
+  }
+
+  .slicknav_menu {
+    display: block;
+  }
+
+  .top-bar .social-head {
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+
+  .top-bar .social-head a {
+    color: rgba(0, 0, 0, 0.5);
+    line-height: 40px;
+  }
+
+  .slider {
+    position: relative;
+    border-bottom: 0 solid  #076531;
+    -webkit-border-radius: 0;
+    border-radius: 0;
+    overflow: hidden;
+    margin-top: 0;
+    padding: 0;
+    margin: 0 -15px;
+  }
+
+  .f-boxs-home h2.abs-title-box {
+    position: relative;
+    ;
+		  right: 0;
+    top: 0;
+    left: 0;
+    margin: 0;
+    display: block;
+    padding: 10px 15px;
+    color: #fff;
+    background-color: #c6a057;
+    font-size: 1em;
+    z-index: 99999;
+    font-weight: bold;
+  }
+
+  .f-box-news-home {
+    padding-right: 0;
+    padding-left: 0;
+    position: relative;
+  }
+
+  .f-box-news-home .owl-nav {
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+
+  .f-box-news-home .owl-nav .owl-prev, .f-box-news-home .owl-nav .owl-next {
+    display: inline-block;
+    float: left;
+    padding: 5px 10px;
+    background-color: #c59f56;
+    color: #fff;
+    font-size: 1em;
+    line-height: 1;
+    margin: 0;
+    border-left: 1px solid rgba(255,255,255, 0.1);
+  }
+
+  .media-home-photos, .one-photo-media-home {
+    padding: 0;
+  }
+
+  .one-photo-media-home {
+    margin-bottom: 15px;
+  }
+
+  .boxs-home-reas .one-box-reas {
+    padding: 0;
+    margin-bottom: 60px;
+  }
+
+  .books-home-box .one-book-home {
+    text-align: center;
+    padding: 0;
+    margin-bottom: 30px;
+  }
+
+  .footer {
+    background-color: #212121;
+    padding: 25px 0;
+    text-align: center;
+  }
+
+  .footer p {
+    display: block;
+    float: none;
+    text-align: center;
+    margin-bottom: 15px;
+  }
+
+  .footer a.ft {
+    display: inline-block;
+    float: none;
+    width: 55px;
+    height: 25px;
+    margin: 0 auto !important;
+    text-align: center;
+  }
+}
+
+	/* Custom, iPhone Retina */
+@media only screen and (max-width : 320px) {
+}
+
+/*
+     FILE ARCHIVED ON 15:55:53 Oct 09, 2023 AND RETRIEVED FROM THE
+     INTERNET ARCHIVE ON 08:01:23 Feb 24, 2025.
+     JAVASCRIPT APPENDED BY WAYBACK MACHINE, COPYRIGHT INTERNET ARCHIVE.
+
+     ALL OTHER CONTENT MAY ALSO BE PROTECTED BY COPYRIGHT (17 U.S.C.
+     SECTION 108(a)(3)).
+*/
+/*
+playback timings (ms):
+  captures_list: 0.655
+  exclusion.robots: 0.024
+  exclusion.robots.policy: 0.011
+  esindex: 0.013
+  cdx.remote: 27.787
+  LoadShardBlock: 172.955 (3)
+  PetaboxLoader3.datanode: 132.185 (4)
+  PetaboxLoader3.resolve: 124.398 (2)
+  load_resource: 86.402
+*/
