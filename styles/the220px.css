@@ -1,6 +1,6 @@
-@import url("styels/droidarabickufi.css");
+@import url("./droidarabickufi.css");
 
-@import url("styels/droidarabicnaskh.css");
+@import url("./droidarabicnaskh.css");
 
 html {
   box-sizing: border-box;
