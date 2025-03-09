@@ -1,0 +1,33 @@
+#huge_it_portfolio_container {
+  padding: 5px;
+  margin-bottom: 20px;
+}
+
+#huge_it_portfolio_container .open-close {
+  width: 20px;
+  height: 20px;
+  display: block;
+  background: #000;
+}
+
+#huge_it_portfolio_options h3 {
+  margin-bottom: 0.2em;
+  font-size: 15px;
+}
+
+#huge_it_portfolio_options h4 {
+  font-weight: bold;
+}
+
+/*
+  playback timings (ms):
+    captures_list: 0.45
+    exclusion.robots: 0.014
+    exclusion.robots.policy: 0.007
+    esindex: 0.01
+    cdx.remote: 14.065
+    LoadShardBlock: 97.417 (3)
+    PetaboxLoader3.datanode: 110.81 (4)
+    load_resource: 317.155
+    PetaboxLoader3.resolve: 292.794
+  */

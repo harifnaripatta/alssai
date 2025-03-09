@@ -1,0 +1,29 @@
+.portfolio-gallery-content img,
+.portfolio-gallery-content a {
+  box-shadow: none !important;
+}
+
+section[id^="huge_it_portfolio_content_"] {
+  display: inline-block !important;
+  width: 100% !important;
+}
+/*
+     FILE ARCHIVED ON 00:08:47 May 14, 2022 AND RETRIEVED FROM THE
+     INTERNET ARCHIVE ON 16:59:25 Mar 09, 2025.
+     JAVASCRIPT APPENDED BY WAYBACK MACHINE, COPYRIGHT INTERNET ARCHIVE.
+
+     ALL OTHER CONTENT MAY ALSO BE PROTECTED BY COPYRIGHT (17 U.S.C.
+     SECTION 108(a)(3)).
+*/
+/*
+playback timings (ms):
+  captures_list: 0.48
+  exclusion.robots: 0.016
+  exclusion.robots.policy: 0.006
+  esindex: 0.025
+  cdx.remote: 31.077
+  LoadShardBlock: 217.749 (3)
+  PetaboxLoader3.datanode: 228.442 (4)
+  load_resource: 80.469
+  PetaboxLoader3.resolve: 58.92
+*/
