@@ -750,7 +750,7 @@
                 dir="rtl"
               >
                 <div class="screen-reader-response"></div>
-                <form
+                <!-- <form
                   action="/web/20231130051933/http://alssai.net/%D8%A7%D8%AA%D8%B5%D9%84-%D8%A8%D9%86%D8%A7/#wpcf7-f1220-p379-o1"
                   method="post"
                   class="wpcf7-form"
@@ -830,7 +830,38 @@
                     />
                   </p>
                   <div class="wpcf7-response-output wpcf7-display-none"></div>
-                </form>
+                </form> -->
+              
+
+                <form id="contactForm">
+                  <input type="text" name="name" id="name" placeholder="Your Name" required><br>
+                  <input type="email" name="email" id="email" placeholder="Your Email" required><br>
+                  <textarea name="message" id="message" placeholder="Your Message" required></textarea><br>
+                  <button type="submit">Send</button>
+              </form>
+
+              <p id="response"></p>
+
+    <script>
+        $(document).ready(function() {
+            $("#contactForm").submit(function(event) {
+                event.preventDefault();
+
+                $.ajax({
+                    url: "send_email.php",
+                    type: "POST",
+                    data: $(this).serialize(),
+                    success: function(response) {
+                        $("#response").text(response);
+                    },
+                    error: function() {
+                        $("#response").text("Error sending message.");
+                    }
+                });
+            });
+        });
+    </script>
+
               </div>
             </div>
             <!-- .entry-content -->
