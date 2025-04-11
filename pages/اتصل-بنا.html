@@ -272,8 +272,30 @@
       type="text/css"
       media="all"
     />
-    <script type="text/javascript" src="../js/jquery.js"></script>
-    <script type="text/javascript" src="../js/jquery-migrate.min.js"></script>
+    <script src="../js/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <script src="../js/jquery-migrate.min.js" integrity="sha512-BzvgYEoHXuphX+g7B/laemJGYFdrq4fTKEo+B3PurSxstMZtwu28FHkPKXu6dSBCzbUWqz/rMv755nUwhjQypw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>    
+
+    <script>
+      $(document).ready(function() {
+        $("#response").hide()
+            $("#contactForm").submit(function(event) {
+                event.preventDefault();
+                $.ajax({
+                    url: "send_email.php",
+                    type: "POST",
+                    data: $(this).serialize(),
+                    success: function(response) {
+                      $("#response").show()
+                        $("#response").text(response);
+                        $("#contactForm").hide()
+                    },
+                    error: function() {
+                        $("#response").text("Error sending message.");
+                    }
+                });
+            });
+        });
+    </script>
     <link rel="https://api.w.org/" href="http://alssai.net/wp-json/" />
     <link
       rel="EditURI"
@@ -750,78 +772,44 @@
                 dir="rtl"
               >
                 <div class="screen-reader-response"></div>
-                <!-- <form
-                  action="/web/20231130051933/http://alssai.net/%D8%A7%D8%AA%D8%B5%D9%84-%D8%A8%D9%86%D8%A7/#wpcf7-f1220-p379-o1"
-                  method="post"
-                  class="wpcf7-form"
-                  novalidate="novalidate"
-                >
-                  <div style="display: none">
-                    <input type="hidden" name="_wpcf7" value="1220" />
-                    <input type="hidden" name="_wpcf7_version" value="5.1.1" />
-                    <input type="hidden" name="_wpcf7_locale" value="ar" />
-                    <input
-                      type="hidden"
-                      name="_wpcf7_unit_tag"
-                      value="wpcf7-f1220-p379-o1"
-                    />
-                    <input
-                      type="hidden"
-                      name="_wpcf7_container_post"
-                      value="379"
-                    />
-                    <input type="hidden" name="g-recaptcha-response" value="" />
-                  </div>
+                
+
+                <form id="contactForm" class="wpcf7-form">
                   <p>
                     أسمك الكريم (مطلوب)<br />
                     <span class="wpcf7-form-control-wrap your-name"
-                      ><input
-                        type="text"
-                        name="your-name"
-                        value=""
-                        size="40"
-                        class="wpcf7-form-control wpcf7-text wpcf7-validates-as-required"
-                        aria-required="true"
-                        aria-invalid="false"
-                    /></span>
+                      >
+                    <input type="text" name="name" id="name"  required />
+                    </span>
                   </p>
                   <p>
                     بريدك الإلكتروني (مطلوب)<br />
                     <span class="wpcf7-form-control-wrap your-email"
-                      ><input
-                        type="email"
-                        name="your-email"
-                        value=""
-                        size="40"
-                        class="wpcf7-form-control wpcf7-text wpcf7-email wpcf7-validates-as-required wpcf7-validates-as-email"
-                        aria-required="true"
-                        aria-invalid="false"
-                    /></span>
+                      >
+                    <input type="email" name="email" id="email"  required />
+                    </span>
                   </p>
                   <p>
                     العنوان<br />
                     <span class="wpcf7-form-control-wrap your-subject"
-                      ><input
-                        type="text"
-                        name="your-subject"
-                        value=""
-                        size="40"
-                        class="wpcf7-form-control wpcf7-text"
-                        aria-invalid="false"
-                    /></span>
+                      >
+                    <input type="text"
+                    name="subject"
+                    id="subject"
+                    value=""
+                    size="40"
+                    class="wpcf7-form-control wpcf7-text"
+                    aria-invalid="false"
+                /> </span>
                   </p>
+                      
                   <p>
                     رسالتك<br />
                     <span class="wpcf7-form-control-wrap your-message">
-                      <textarea
-                        name="your-message"
-                        cols="40"
-                        rows="10"
-                        class="wpcf7-form-control wpcf7-textarea"
-                        aria-invalid="false"
-                      ></textarea>
+                    <textarea name="message" id="message"  required ></textarea>
                     </span>
                   </p>
+                  
                   <p>
                     <input
                       type="submit"
@@ -829,38 +817,9 @@
                       class="wpcf7-form-control wpcf7-submit"
                     />
                   </p>
-                  <div class="wpcf7-response-output wpcf7-display-none"></div>
-                </form> -->
-              
-
-                <form id="contactForm">
-                  <input type="text" name="name" id="name" placeholder="Your Name" required><br>
-                  <input type="email" name="email" id="email" placeholder="Your Email" required><br>
-                  <textarea name="message" id="message" placeholder="Your Message" required></textarea><br>
-                  <button type="submit">Send</button>
               </form>
 
-              <p id="response"></p>
-
-    <script>
-        $(document).ready(function() {
-            $("#contactForm").submit(function(event) {
-                event.preventDefault();
-
-                $.ajax({
-                    url: "send_email.php",
-                    type: "POST",
-                    data: $(this).serialize(),
-                    success: function(response) {
-                        $("#response").text(response);
-                    },
-                    error: function() {
-                        $("#response").text("Error sending message.");
-                    }
-                });
-            });
-        });
-    </script>
+              <div id="response" class="wpcf7-response-output">Success</div>
 
               </div>
             </div>
@@ -890,7 +849,7 @@
       c = c.replace(/woocommerce-no-js/, "woocommerce-js");
       document.body.className = c;
     </script>
-    <script type="text/javascript">
+    <!-- <script type="text/javascript">
       /* <![CDATA[ */
       var wpcf7 = {
         apiSettings: {
@@ -900,11 +859,11 @@
         cached: "1",
       };
       /* ]]> */
-    </script>
-    <script
+    </script> -->
+    <!-- <script
       type="text/javascript"
       src="https://web.archive.org/web/20231130051933js_/http://alssai.net/wp-content/plugins/contact-form-7/includes/js/scripts.js?ver=5.1.1"
-    ></script>
+    ></script> -->
     <script
       type="text/javascript"
       src="https://web.archive.org/web/20231130051933js_/http://alssai.net/wp-content/plugins/woocommerce/assets/js/jquery-blockui/jquery.blockUI.min.js?ver=2.70"
